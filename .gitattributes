@@ -1,0 +1,7 @@
+dist/**/* 				linguist-generated
+*.md 							linguist-generated
+
+.yarn/**           linguist-vendored
+.yarn/releases/*   binary linguist-vendored
+
+yarn.lock 				linguist-generated
