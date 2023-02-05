@@ -1,8 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+
+import CardAddCompletePage from "./pages/CardAddCompletePage";
+import CardListPage from "./pages/CardListPage";
+import CardRegisterPage from "./pages/CardRegisterPage";
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<CardListPage />} />
+      <Route path="/add" element={<CardRegisterPage />} />
+      <Route path="/add/complete" element={<CardAddCompletePage />} />
+    </Routes>
   );
 };
 
